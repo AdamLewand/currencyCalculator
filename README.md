@@ -1,6 +1,6 @@
 # Adam Lewandowski - my first small program
 
-![currencyCalc](image/callc.PNG)
+![currencyCalc](image/calc.PNG)
 
 ## DEMO
 
