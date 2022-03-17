@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przelicznik kursu walut</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans:wght@300&family=Quicksand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form class="js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                    Kalkulator walut
+                </legend>
+                <p>
+                    <label>
+                        <span class="form__labelText">
+                            Kwota:
+                        </span>
+                        <input class="form__field js-amount" name="amount" type="number" min="1" step="any" required
+                            placeholder="Wpisz kwotę w PLN" autofocus>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labelText">
+                            Waluta:
+                        </span>
+                        <select class="form__field js-currency" name="currency">
+                            <option value="">Wybierz walutę</option>
+                            <option value="PHP">PHP - Filipiny</option>
+                            <option value="MYR">MYR - Malezja</option>
+                            <option value="BRL">BRL - Brazylia</option>
+                        </select>
+                    </label>
+                </p>
+            
+            <p>
+                <button class="form__button">Przelicz</button>
+                <button type="reset" class="form__button">Wyczyść</button>
+            </p>
+        </form>
+        <p> Wynik w PLN: <strong class="js-result"></strong></p>
+    </fieldset>
+    </div>
+</body>
+
+</html>
