@@ -1,8 +1,16 @@
 # Adam Lewandowski - my first small program
 
-![currencyCalc](image/calc.PNG)
+
+![How to use:](image/Animation.gif)
+
 
 ## DEMO
 
 https://adamlewand.github.io/currencyCalculator/
   
+#### Used technologies:
+
+- BEM
+- CSS
+- HTML
+- JavaScript
