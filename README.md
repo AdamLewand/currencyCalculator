@@ -5,3 +5,4 @@
 ## DEMO
 
 https://adamlewand.github.io/currencyCalculator/
+  
