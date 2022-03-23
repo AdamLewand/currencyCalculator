@@ -8,13 +8,15 @@ html {
 
 .body {
     font-family: 'Lato', sans-serif;
-}
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200604/pngtree-cute-hand-drawn-style-math-education-stripes-background-image_337560.jpg");
+    background-size: cover;
+    }
 
 .container {
     max-width: 400px;
     margin: 0 auto;
     padding: 0 20px;
-
+    
 }
 
 .form__labelText {
