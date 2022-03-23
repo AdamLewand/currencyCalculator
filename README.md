@@ -12,4 +12,4 @@ https://adamlewand.github.io/currencyCalculator/
 - BEM
 - CSS
 - HTML
-- JavaScript
+- JavaScript.
