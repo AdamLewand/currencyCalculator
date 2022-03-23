@@ -1,5 +1,4 @@
-# Adam Lewandowski - my first small program
-
+# Adam Lewandowski 
 
 ![How to use:](image/Animation.gif)
 
