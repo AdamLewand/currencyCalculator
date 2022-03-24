@@ -1,38 +1,46 @@
-console.log("Cześć i czołem");
+{
+    console.log("Cześć i czołem");
 
-let amountElement = document.querySelector(".js-amount");
-let currencyElement = document.querySelector(".js-currency");
-let formElement = document.querySelector(".js-form");
-let resultElement = document.querySelector(".js-result");
+    const calculateResult = (amount, currency) => {
+        const PHP = 11.97;
+        const MYR = 0.96;
+        const BRL = 1.14;
 
+        switch (currency) {
+            case "PHP":
+                return amount / PHP;
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+            case "MYR":
+                return amount / MYR;
 
-    let amount = amountElement.value;
-    let currency = currencyElement.value;
+            case "BRL":
+                return amount / BRL;
+        }
+    };
 
-    let PHP = 11.97;
-    let MYR = 0.96;
-    let BRL = 1.14;
+    const onFormSubmit = (event) => {
+        event.preventDefault();
 
-    amountElement.focus();
+        const amountElement = document.querySelector(".js-amount");
+        const currencyElement = document.querySelector(".js-currency");
+        const resultElement = document.querySelector(".js-result");
 
-    let result;
+        amountElement.focus();
 
-    switch (currency) {
-        case "PHP":
-            result = amount / PHP;
-            break;
+        const amount = amountElement.value;
+        const currency = currencyElement.value;
 
-        case "MYR":
-            result = amount / MYR;
-            break;
+        const result = calculateResult(amount, currency);
 
-        case "BRL":
-            result = amount / BRL;
-            break;
-    }
-            resultElement.innerText = result.toFixed(2);
-    })
+        resultElement.innerText = result.toFixed(2);
 
+    };
+
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
+
+        formElement.addEventListener("submit", onFormSubmit);
+    };
+
+    init();
+}
