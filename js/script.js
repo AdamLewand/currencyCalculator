@@ -1,5 +1,5 @@
 {
-    console.log("Cześć i czołem");
+    console.log("Cześć i czołem!");
 
     const calculateResult = (amount, currency) => {
         const PHP = 11.97;
